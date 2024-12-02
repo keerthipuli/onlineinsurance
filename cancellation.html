@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancellation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Add background image to the body */
+    body {
+        background-image: url('https://static.vecteezy.com/system/resources/previews/013/630/293/large_2x/aesthetic-style-background-template-with-organic-abstract-shapes-and-lines-in-soft-green-color-burnt-orange-vector-illustration-free-photo.jpg'); /* Replace with the path to your image */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    }
+</style>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Cancellation</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="agent-availability.html">Agent Availability</a></li>
+                    <li><a href="booking.html">Agent Booking</a></li>
+                    <li><a href="cancellation.html" class="active">Cancellation</a></li>
+                    <li><a href="Manage.html">Manage</a></li>
+<li><a href="Plan.html">Plan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form id="cancellation-form">
+            <div class="form-group">
+                <label for="appointment-id">Appointment ID</label>
+                <input type="text" id="appointment-id" required>
+            </div>
+            <div class="form-group">
+                <label for="agentname">Agent Name</label>
+                <input type="text" id="agentname" required>
+            </div>
+            <div class="form-group">
+            <label for="appointment-date">Appointment Date</label>
+            <input type="date" id="appointment-date" required>
+        </div>
+            <div class="form-group">
+                <label for="reason">Cancellation Reason</label>
+                <textarea id="reason" rows="4" required></textarea>
+            </div>
+            <button type="submit">Cancel Appointment</button>
+        </form>
+    </main>
+    <div class="car-animation">
+        <img src="https://i.pinimg.com/564x/d8/3d/f0/d83df01935b49bd759f1525f653ef26a.jpg" class="car-animation" alt="Car Animation">
+    </div>
+</body>
+</html>

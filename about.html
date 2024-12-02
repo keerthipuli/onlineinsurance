@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>About Us - Online Insurance</title>
+    <link rel="stylesheet" href="About.css">
+</head>
+<body>
+
+<!-- Include Header -->
+<header>
+    <div class="header-container">
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="agent-availability.html">Agent Availability</a></li>
+                <li><a href="booking.html" class="active">Agent Booking</a></li>
+                <li><a href="cancellation.html">Cancellation</a></li>
+                <li><a href="Manage.html">Manage</a></li>
+                <li><a href="Plan.html">Plan</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<script>
+    document.getElementById("header").innerHTML = fetch('header.html').then(res => res.text());
+</script>
+
+<main>
+    <section class="about">
+        <p>Welcome to Online Insurance, your reliable partner in insurance management. We are committed to providing an easy-to-use, efficient, and secure platform that helps individuals and businesses manage their insurance policies with ease.</p>
+        
+        <h3>Our Mission</h3>
+        <p>Our mission is to simplify insurance management by providing a centralized, accessible, and user-friendly platform that meets the needs of both individuals and businesses. We believe that managing your insurance policies should be straightforward and stress-free, allowing you to focus on what truly matters.</p>
+        
+        <h3>Our Values</h3>
+        <ul>
+            <li><strong>Transparency:</strong> We prioritize transparency, ensuring that our users have clear information about their policies and claims.</li>
+            <li><strong>Security:</strong> We understand the sensitivity of your personal information and use state-of-the-art technology to protect it.</li>
+            <li><strong>Customer-Centric:</strong> Our platform is designed with you in mind. We continuously improve our services based on user feedback.</li>
+        </ul>
+        
+        <h3>Our Services</h3>
+        <p>Online Insurance offers a comprehensive suite of services to manage various types of insurance policies, including:</p>
+        <ul>
+            <li><strong>Life Insurance Management:</strong> Keep track of life insurance policies, beneficiaries, and coverage details.</li>
+            <li><strong>Health Insurance Management:</strong> Manage your health insurance policies, claims, and coverage for a seamless experience.</li>
+            <li><strong>Auto Insurance Management:</strong> Organize your auto insurance policies, from premium schedules to coverage details.</li>
+            <li><strong>Property Insurance:</strong> Monitor your property insurance, ensuring your assets are always protected.</li>
+        </ul>
+        
+        <h3>How Our System Works</h3>
+        <p>Our web-based platform is designed to make insurance management simple and accessible:</p>
+        <ul>
+            <li><strong>Centralized Repository:</strong> All your insurance policies are stored in a single, secure location.</li>
+            <li><strong>Real-Time Updates:</strong> Get up-to-date information on your policies, premiums, and claims.</li>
+            <li><strong>Automated Reminders:</strong> Never miss a payment or renewal date with automated notifications and reminders.</li>
+            <li><strong>24/7 Access:</strong> Access your insurance information from anywhere, anytime.</li>
+        </ul>
+        
+        <h3>Why Choose Us?</h3>
+        <p>With Online Insurance, you gain access to a cutting-edge platform that empowers you to manage your policies easily and efficiently. Whether you're an individual managing your family's policies or a business handling multiple clients, we offer the flexibility and control you need. We are constantly evolving to provide you with the best possible experience and ensure your peace of mind.</p>
+        
+        <h3>Contact Us</h3>
+        <p>If you have any questions or need assistance, our support team is here to help. Feel free to reach out at <a href="mailto:support@onlineinsurance.com">support@onlineinsurance.com</a> or call us at <strong>(123) 456-7890</strong>.</p>
+    </section>
+</main>
+
+</body>
+</html>

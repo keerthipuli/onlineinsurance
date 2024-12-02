@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Add background image to the body */
+    body {
+        background-image: url('https://static.vecteezy.com/system/resources/previews/013/630/293/large_2x/aesthetic-style-background-template-with-organic-abstract-shapes-and-lines-in-soft-green-color-burnt-orange-vector-illustration-free-photo.jpg'); /* Replace with the path to your image */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    }
+</style>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Agent Booking</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="agent-availability.html">Agent Availability</a></li>
+                    <li><a href="booking.html" class="active">Agent Booking</a></li>
+                    <li><a href="cancellation.html">Cancellation</a></li>
+                    <li><a href="Manage.html">Manage</a></li>
+<li><a href="Plan.html">Plan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="appointment-date">Appointment Date</label>
+                <input type="date" id="appointment-date" required>
+            </div>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </main>
+    <div class="car-animation">
+        <img src="https://i.pinimg.com/564x/d8/3d/f0/d83df01935b49bd759f1525f653ef26a.jpg" class="car-animation" alt="Car Animation">
+    </div>
+</body>
+</html>

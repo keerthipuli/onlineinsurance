@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Plans</title>
+    <link rel="stylesheet" href="plan.css">
+    <style>
+         #header {
+        position: fixed; /* Make the header fixed at the top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* Ensure it's on top of other content */
+    }
+
+    body {
+        margin-top: 100px; /* Adjust body content to avoid overlapping with the fixed header */
+    }
+        /* Add background image to the body */
+        body {
+            background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with the path to your image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Keeps the background fixed while scrolling */
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="header-container">
+            <h1>Online Insurance Subscription</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="agent-availability.html" class="active">Agent Availability</a></li>
+                    <li><a href="booking.html">Agent Booking</a></li>
+                    <li><a href="cancellation.html">Cancellation</a></li>
+                    <li><a href="manage.html">Manage</a></li>
+                    <li><a href="plan.html">Plan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="plans-container">
+        <div class="plan-box">
+            <h2>Health Insurance</h2>
+            <p>Comprehensive coverage for medical expenses.</p>
+            <button onclick="window.location.href='Subscriptions.html'">View Subscriptions</button>
+        </div>
+        <div class="plan-box">
+            <h2>Life Insurance</h2>
+            <p>Secure your family's future with life coverage.</p>
+            <button onclick="window.location.href='Subscriptions.html'">View Subscriptions</button>
+        </div>
+        <div class="plan-box">
+            <h2>Auto Insurance</h2>
+            <p>Protection for your vehicle against unforeseen events.</p>
+            <button onclick="window.location.href='Subscriptions.html'">View Subscriptions</button>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Registration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS -->
+    <style>
+        
+    /* Add background image to the body */
+    body {
+        background-image: url('https://tse4.mm.bing.net/th?id=OIP.cTl6K-APTiFAkMbu_h-uBQHaD9&pid=Api&P=0&h=180'); /* Replace with the path to your image */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    }
+
+        .registration-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .registration-container h1 {
+            text-align: center;
+            color: #ffc107;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background: #ffc107;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .success {
+            color: green;
+            text-align: center;
+        }
+        .error {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Admin Registration</h1>
+        
+        <div id="error-message" class="error" style="display: none;"></div>
+
+        <form id="admin-registration-form">
+            <div class="form-group">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="confirm_password" placeholder="Confirm Password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('admin-registration-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+
+            // Get the values from the input fields
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirm_password').value;
+
+            // Validation: Check if passwords match
+            if (password !== confirmPassword) {
+                // Display an error message
+                document.getElementById('error-message').style.display = 'block';
+                document.getElementById('error-message').innerText = 'Passwords do not match. Please try again.';
+                return;
+            }
+
+            // If everything is valid, redirect to the admin login page
+            window.location.href = 'adminlogin.html';
+        });
+    </script>
+</body>
+</html>

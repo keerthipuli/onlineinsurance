@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    
+    /* Update body background */
+    body {
+        background-image: url('https://tse3.mm.bing.net/th?id=OIP._vMl2Z9O0ld-NCOBwDqDRgHaE8&pid=Api&P=0&h=180');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    /* Header and Navigation Styling */
+    header {
+        background-color: #FFC107; /* Light yellow (Amber) for the menu bar */
+        padding: 20px;
+        text-align: center;
+        color: black;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black; /* Black text for contrast */
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: darkgoldenrod; /* Hover effect for menu links */
+    }
+
+    /* Form Container Styling */
+    .form-container {
+        background-color: white; /* Keep form background white */
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: auto;
+        margin-top: 50px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-group label {
+        color: black;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    /* Login Button Styling */
+    button {
+        background-color: #FFC107; /* Light yellow (Amber) for the button */
+        color: black; /* Black text for contrast */
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #FFA000; /* Darker shade on hover */
+    }
+
+    /* Footer link styling inside form */
+    form p a {
+        color: darkgoldenrod;
+        text-decoration: underline;
+    }
+
+    .car-animation {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .car-animation img {
+        width: 100px;
+        animation: moveCar 3s linear infinite;
+    }
+
+    @keyframes moveCar {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(20px); }
+        100% { transform: translateX(0); }
+    }
+
+    /* Add background image to the body */
+    
+</style>
+<body class="login-page">
+
+    <header>
+        <div class="header-container">
+            <h1>Login</h1>
+            <nav>
+                <ul>
+                    
+        
+                   
+                    
+                    <li><a href="admin.html">Register</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <form id="login-form" onsubmit="return handleLogin(event)">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            
+            <p><a href="adminpassword.html">Forgot Password?</a></p>
+            <p>Don't have an account? <a href="register.html">Register now</a></p>
+        </form>
+    </div>
+
+   
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Capture the username and password entered by the admin
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Example of a basic login check (replace with your actual authentication mechanism)
+            if (username && password) {
+                // If login credentials are provided, redirect to the admin dashboard
+                window.location.href = "admindashboard.html"; // Redirect to admin dashboard
+            } else {
+                alert("Please enter both username and password.");
+            }
+        }
+    </script>
+
+</body>
+</html>

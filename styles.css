@@ -1,0 +1,186 @@
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    position: relative; /* Ensure positioning for the car animation */
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-container h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Main section for Home, Contact, and Login pages (Centered) */
+.main {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    flex-direction: column; /* Stacks the text vertically */
+    text-align: center; /* Centers the text */
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Specific Page Layout (Top Center for Registration, Agent Availability, Booking, and Cancellation) */
+.main-top {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: flex-start; /* Aligns the content at the top */
+    flex-direction: column; /* Stacks the text vertically */
+    text-align: center; /* Centers the text */
+    min-height: 100vh; /* Full height of the viewport */
+    padding-top: 30px; /* Adds space at the top */
+}
+
+/* Contact Page Styling */
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full screen height even on short content pages */
+    background-color: #e1f5fe; /* Light background color */
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4CAF50; /* Visible green border */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Contact and Agent Section Styling */
+.agent-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.agent-card {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.agent-icon {
+    font-size: 30px;
+}
+
+.agent-card h3 {
+    margin: 10px 0;
+}
+
+.contact-btn, .notify-btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-btn:hover, .notify-btn:hover {
+    background-color: #45a049;
+}
+
+/* Car Animation - Fixed at the bottom of the page */
+.car-animation {
+    position: fixed; /* Ensures it stays fixed in place */
+    bottom: 0; /* Always at the bottom */
+    left: -200px; /* Start from the left off-screen */
+    width: 100px;
+    animation: moveCar 10s linear infinite; /* 10 seconds animation */
+}
+
+/* Keyframes for the car animation */
+@keyframes moveCar {
+    0% {
+        left: -200px; /* Start off-screen */
+    }
+    100% {
+        left: 100%; /* End off-screen to the right */
+    }
+}
+/* Adjust bullet spacing in lists */
+ul {
+    list-style-position: inside; /* Moves bullets closer to the text */
+    padding-left: 0; /* Removes default padding from the list */
+}
+
+li {
+    margin-left: 10px; /* Optional: Adds some space between bullet and text */
+    padding: 5px 0; /* Adds spacing between list items */
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage - Online Insurance</title>
+    <link rel="stylesheet" href="manage.css">
+</head>
+<style>
+    /* Add background image to the body */
+    body {
+        background-image: url('https://static.vecteezy.com/system/resources/previews/009/948/834/original/aesthetic-minimal-green-frame-background-illustration-perfect-for-wallpaper-backdrop-postcard-background-vector.jpg'); /* Replace with the path to your image */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    }
+</style>
+<body>
+    <!-- Header Section -->
+    <header id="header"></header>
+    <script src="HeaderLoader.js" defer></script>
+
+    <main>
+        <section class="manage-section">
+            <h2>Manage Insurance Agents and Customers</h2>
+            <p>Efficiently manage operations like agent availability, customer support, and appointments.</p>
+
+            <div class="grid-container">
+                <div class="grid-item agent">
+                    <h3>Agents</h3>
+                    <p>Update schedules and statuses of your insurance agents.</p>
+                    <button onclick="redirectTo('Agents')">Manage Agents</button>
+                </div>
+                <div class="grid-item customer">
+                    <h3>Customers</h3>
+                    <p>Handle customer queries and enhance satisfaction.</p>
+                    <button onclick="redirectTo('Customers')">Manage Customers</button>
+                </div>
+                <div class="grid-item appointment">
+                    <h3>Appointments</h3>
+                    <p>Schedule and manage appointments effectively.</p>
+                    <a href="C:\Users\pulik\OneDrive\Desktop\online insurance\images\a.html" class="button-link">Manage Appointments</a>
+                </div>
+                <div class="grid-item reports">
+                    <h3>Reports</h3>
+                    <p>Generate detailed reports on performance and satisfaction.</p>
+                    <button onclick="redirectTo('Reports')">View Reports</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="manage.js" defer></script>
+</body>
+</html>
+
+
